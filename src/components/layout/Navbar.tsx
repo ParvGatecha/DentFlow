@@ -22,7 +22,9 @@ export default function Navbar() {
           <Link href="#demo" className="hidden md:block text-sm font-medium text-slate-600 hover:text-brand-600 transition-colors">
             Log in
           </Link>
-          <Button size="sm">Book Demo</Button>
+          <Link href="https://calendly.com/gatechaparv/30min" target="_blank" rel="noopener noreferrer">
+            <Button size="sm">Book Demo</Button>
+          </Link>
         </div>
       </div>
     </header>

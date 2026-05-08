@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 
 export default function FinalCTA() {
@@ -28,12 +29,16 @@ export default function FinalCTA() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base shadow-brand-500/20">
-              Book a Demo
-            </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-transparent text-white border-slate-700 hover:bg-slate-800 hover:text-white">
-              Talk to Sales
-            </Button>
+            <Link href="https://calendly.com/gatechaparv/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base shadow-brand-500/20">
+                Book a Demo
+              </Button>
+            </Link>
+            <Link href="mailto:hello@dentflow.ai" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-transparent text-white border-slate-700 hover:bg-slate-800 hover:text-white">
+                Talk to Sales
+              </Button>
+            </Link>
           </div>
           
           <p className="text-sm text-slate-500 mt-6">

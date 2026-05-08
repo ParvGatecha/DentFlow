@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { Play, CheckCircle2, MessageSquareText } from "lucide-react";
@@ -52,13 +53,17 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center gap-4 mb-12"
           >
-            <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base shadow-brand-500/25">
-              Book a Demo
-            </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base group">
-              <Play className="mr-2 h-4 w-4 group-hover:text-brand-500 transition-colors" />
-              Watch Demo
-            </Button>
+            <Link href="https://calendly.com/gatechaparv/30min" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base shadow-brand-500/25">
+                Book a Demo
+              </Button>
+            </Link>
+            <Link href="#demo" className="w-full sm:w-auto">
+              <Button variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base group">
+                <Play className="mr-2 h-4 w-4 group-hover:text-brand-500 transition-colors" />
+                Watch Demo
+              </Button>
+            </Link>
           </motion.div>
 
           <motion.div
